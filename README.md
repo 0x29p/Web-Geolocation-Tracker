@@ -24,12 +24,11 @@ Paket yang dibutuhkan:
    pkg update && pkg upgrade -y
 
 2. **Instal bahasa pemrograman dan tool pendukung:**
-  ```bash
-  pkg install python git wget ca-certificates -y
-
-3. **Instal framework Flask**
    ```bash
-   pip install Flask
+   pkg install python git wget ca-certificates -y
+
+
+
 
 4. **Kloning repository ini:**
    ```bash
