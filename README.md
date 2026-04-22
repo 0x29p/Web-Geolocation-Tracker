@@ -45,7 +45,8 @@ Paket yang dibutuhkan:
   Tool ini membutuhkan dua sesi (session) Termux yang berjalan bersamaan.
   ## Sesi 1: Menjalankan Server Python
   ​Di layar Termux pertama, jalankan file Python untuk menghidupkan server Flask:
-    ```bash
+  **
+  ```bash
     python app.py
      
   (Biarkan sesi ini tetap berjalan dan standby. Jangan tekan CTRL+C).
