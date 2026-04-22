@@ -24,7 +24,7 @@ Sebuah proyek berbasis Python (Flask) dan HTML/JS untuk mendemonstrasikan pelaca
 
 2. **Kloning Repository:**
    ```bash
-   git clone [https://github.com/UsernameKamu/NamaRepoKamu.git](https://github.com/UsernameKamu/NamaRepoKamu.git)
+   git clone [[https://github.com/UsernameKamu/NamaRepoKamu.git](https://github.com/0x29p/Web-Geolocation-Tracker.git)]()
    cd NamaRepoKamu
    ```
 
