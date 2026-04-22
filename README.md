@@ -41,9 +41,9 @@ Paket yang dibutuhkan:
    chmod +x cloudflared
 
 
-  **Cara Penggunaan**
-    ​Tool ini membutuhkan dua sesi (session) Termux yang berjalan bersamaan.
-  **​Sesi 1: Menjalankan Server Python**
+  ## Cara Penggunaan​
+  Tool ini membutuhkan dua sesi (session) Termux yang berjalan bersamaan.
+  ## Sesi 1: Menjalankan Server Python**
     ​Di layar Termux pertama, 
     jalankan file Python untuk menghidupkan server Flask:
     ```bash
@@ -51,7 +51,7 @@ Paket yang dibutuhkan:
     
   (Biarkan sesi ini tetap berjalan dan standby. Jangan tekan CTRL+C).
 
-  **Sesi 2: Mengaktifkan Cloudflare Tunnel**
+  ## Sesi 2: Mengaktifkan Cloudflare Tunnel
    Catatan: Variabel SSL_CERT_FILE
    digunakan agar Termux dapat memverifikasi sertifikat HTTPS dari Cloudflare.
   
@@ -59,3 +59,4 @@ Paket yang dibutuhkan:
    Kemudian jalankan perintah ini:
    ```bash
    SSL_CERT_FILE=$PREFIX/etc/tls/cert.pem ./cloudflared tunnel --url http://localhost:5000
+
