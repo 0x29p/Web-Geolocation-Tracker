@@ -54,26 +54,12 @@ chmod +x cloudflared
 
    **Sesi 2: Mengaktifkan Cloudflare Tunnel**
 ​   Geser layar Termux dari tepi kiri ke tengah, pilih New Session untuk membuka layar baru.
-   Kemudian jalankan perintah ini: ```bash
-   
+   Kemudian jalankan perintah ini: 
+   ```bash
    SSL_CERT_FILE=$PREFIX/etc/tls/cert.pem ./cloudflared tunnel --url http://localhost:5000
 
    Catatan: Variabel SSL_CERT_FILE
    digunakan agar Termux dapat memverifikasi sertifikat HTTPS dari Cloudflare.
 
----   
-
-**Mendapatkan Link & Melacak Target**
-​Pada Sesi 2, cari baris teks log yang menampilkan URL publik.
-Contoh: https://red-apple-tree.trycloudflare.com.
-​Salin link tersebut dan kirimkan kepada target (bisa disamarkan menggunakan URL Shortener seperti Bitly).
-​Ketika target mengklik link tersebut, halaman web palsu akan terbuka dan otomatis meminta izin akses GPS.
-​Jika target menekan "Allow/Izinkan",
-
-kembali ke Sesi 1 di Termux. Koordinat Latitude, Longitude, serta link Google Maps target akan langsung tercetak di layar secara real-time.
-
-
-**​🧠 Bagaimana Cara Kerjanya?**
-​Backend (app.py): Bertindak sebagai server lokal di port 5000 yang menyajikan halaman web HTML dan menyediakan endpoint API (/terima_koordinat) untuk menerima data pos.
-​Frontend (HTML/JS): Berisi skrip otomatis (window.onload) yang memanggil navigator.geolocation.getCurrentPosition(). Skrip ini akan membaca koordinat GPS perangkat jika izin diberikan oleh pengguna.
-​Tunneling (Cloudflare): Mengubah server localhost di Termux menjadi server publik dengan protokol HTTPS, sehingga browser modern (Chrome/Safari) mengizinkan fitur Geolocation API untuk dijalankan.
+ 
+---
