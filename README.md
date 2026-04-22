@@ -38,7 +38,6 @@ Paket yang dibutuhkan:
    Karena kita menggunakan Android (ARM64), unduh Cloudflare versi Linux ARM64 ke dalam folder yang sama
    ```bash
    wget -O cloudflared [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64] (https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64)
-   ```bash
   chmod +x cloudflared
 
 
