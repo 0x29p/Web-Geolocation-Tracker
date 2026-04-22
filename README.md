@@ -25,7 +25,7 @@ Sebuah proyek berbasis Python (Flask) dan HTML/JS untuk mendemonstrasikan pelaca
 2. **Kloning Repository:**
    ```bash
    git clone https://github.com/0x29p/Web-Geolocation-Tracker.git
-   cd eb-Geolocation-Tracker
+   cd Web-Geolocation-Tracker
    ```
 
 3. **Unduh & Siapkan Cloudflared:**
