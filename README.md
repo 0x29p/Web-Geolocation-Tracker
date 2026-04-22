@@ -22,3 +22,37 @@ Paket yang dibutuhkan:
 1. **Buka Termux** dan perbarui sistem paket:
    ```bash
    pkg update && pkg upgrade -y
+
+2. **Instal bahasa pemrograman dan tool pendukung:**
+  ```bash
+  pkg install python git wget ca-certificates -y
+
+3. **Instal framework Flask**
+   ```bash
+   pip install Flask
+
+4. **Kloning repository ini:**
+   ```bash
+
+5. **Unduh Cloudflared (Tunneling):**
+   Karena kita menggunakan Android (ARM64), unduh Cloudflare versi Linux ARM64 ke dalam folder yang sama
+   ```bash
+   wget -O cloudflared [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64](https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64)
+chmod +x cloudflared
+
+
+**Cara Penggunaan**
+​Tool ini membutuhkan dua sesi (session) Termux yang berjalan bersamaan.
+**​Sesi 1: Menjalankan Server Python**
+​Di layar Termux pertama, jalankan file Python untuk menghidupkan server Flask:
+   ```bash
+    python app.py
+(Biarkan sesi ini tetap berjalan dan standby. Jangan tekan CTRL+C).
+
+
+**Sesi 2: Mengaktifkan Cloudflare Tunnel**
+​Geser layar Termux dari tepi kiri ke tengah, pilih New Session untuk membuka layar baru.
+Kemudian jalankan perintah ini:
+ ```bash
+SSL_CERT_FILE=$PREFIX/etc/tls/cert.pem ./cloudflared tunnel --url http://localhost:5000
+
