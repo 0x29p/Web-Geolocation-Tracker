@@ -27,8 +27,9 @@ Paket yang dibutuhkan:
    ```bash
    pkg install python git wget ca-certificates -y
 
-
-
+3. **Instal framework Flask**
+   ```bash
+   pip install Flask
 
 4. **Kloning repository ini:**
    ```bash
@@ -40,12 +41,13 @@ Paket yang dibutuhkan:
 chmod +x cloudflared
 
 
-**Cara Penggunaan**
-​Tool ini membutuhkan dua sesi (session) Termux yang berjalan bersamaan.
-**​Sesi 1: Menjalankan Server Python**
-​Di layar Termux pertama, jalankan file Python untuk menghidupkan server Flask:
-   ```bash
+  **Cara Penggunaan**
+    ​Tool ini membutuhkan dua sesi (session) Termux yang berjalan bersamaan.
+  **​Sesi 1: Menjalankan Server Python**
+    ​Di layar Termux pertama, jalankan file Python untuk menghidupkan server Flask:
+   ``bash
     python app.py
+    
 (Biarkan sesi ini tetap berjalan dan standby. Jangan tekan CTRL+C).
 
 
