@@ -30,7 +30,7 @@ Sebuah proyek berbasis Python (Flask) dan HTML/JS untuk mendemonstrasikan pelaca
 
 3. **Unduh & Siapkan Cloudflared:**
    ```bash
-   wget -O cloudflared [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64](https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64
+   wget -O cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64
    ```
    ```bash
    chmod +x cloudflared
