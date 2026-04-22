@@ -37,8 +37,9 @@ Paket yang dibutuhkan:
 5. **Unduh Cloudflared (Tunneling):**
    Karena kita menggunakan Android (ARM64), unduh Cloudflare versi Linux ARM64 ke dalam folder yang sama
    ```bash
-   wget -O cloudflared [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64](https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64)
-chmod +x cloudflared
+   wget -O cloudflared [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64] (https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64)
+   ```bash
+  chmod +x cloudflared
 
 
   **Cara Penggunaan**
@@ -51,15 +52,13 @@ chmod +x cloudflared
     
   (Biarkan sesi ini tetap berjalan dan standby. Jangan tekan CTRL+C).
 
-
-   **Sesi 2: Mengaktifkan Cloudflare Tunnel**
+  **Sesi 2: Mengaktifkan Cloudflare Tunnel**
 ​   Geser layar Termux dari tepi kiri ke tengah, pilih New Session untuk membuka layar baru.
    Kemudian jalankan perintah ini: 
    ```bash
    SSL_CERT_FILE=$PREFIX/etc/tls/cert.pem ./cloudflared tunnel --url http://localhost:5000
 
-   Catatan: Variabel SSL_CERT_FILE
-   digunakan agar Termux dapat memverifikasi sertifikat HTTPS dari Cloudflare.
+Catatan: Variabel SSL_CERT_FILE digunakan agar Termux dapat memverifikasi sertifikat HTTPS dari Cloudflare.
 
- 
----
+
+   
